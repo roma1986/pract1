@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:pract1"
+             x:Class="pract1.MainPage">
+
+    <!--<StackLayout Padding="20">
+        <BoxView Color="red" Margin="5" HeightRequest="100"/>
+        <BoxView Color="red" Margin="0,5,0,0" HeightRequest="50"/>
+        <Label Text="{x:Static local:MainPage.staticVar}"
+         FontSize="{x:Static local:MainPage.header}"
+         VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Привіт)))" 
+           HorizontalOptions="Center"
+           VerticalOptions="Fill">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="Red"/>
+                    <Setter Property="BackgroundColor" Value="Silver"/>
+                </Style>
+            </Label.Style>
+        </Label>
+        
+        <Label Text="Hello!!!"
+               HorizontalOptions="Center"
+               VerticalOptions="Fill"
+               TextColor="Yellow"
+               BackgroundColor="Green"/>
+
+        <Button Text="Click ME:)" x:Name="mybut1" Clicked="mybut1_Click"/>
+
+    </StackLayout>-->
+    <StackLayout>
+        <Label Text="First Progect (Smile)"
+               HorizontalOptions="Center"
+               VerticalOptions="Fill"
+               TextColor="Yellow"
+               BackgroundColor="Green"/>
+
+        <Grid x:Name="mygrid" ColumnSpacing="1" RowSpacing="1" HorizontalOptions="Center">
+            <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+            <ColumnDefinition Width="{x:Static local:MainPage.staticVar}"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+            <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
+        </Grid.RowDefinitions>
+
+
+
+        </Grid>
+        
+        
+        <BoxView Color="CornflowerBlue"
+             CornerRadius="200"
+             WidthRequest="160"
+             HeightRequest="160"
+             VerticalOptions="Center"
+             HorizontalOptions="Center" />
+    </StackLayout>
+
+
+</ContentPage>
