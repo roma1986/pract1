@@ -87,7 +87,31 @@ namespace pract1
                     }
                 }
             }
-            mygrid.Children.Add(new BoxView { Color = Color.Black }, 0, 2,0,1);
+            BoxView BlackBox11 = new BoxView { Color = Color.Black };
+            mygrid.Children.Add(BlackBox11, 4, 5);
+            Grid.SetColumnSpan(BlackBox11, 3);
+
+            BoxView BlackBox12 = new BoxView { Color = Color.Black };
+            mygrid.Children.Add(BlackBox12, 5, 4);
+            Grid.SetRowSpan(BlackBox12, 3);
+
+            BoxView BlackBox21 = new BoxView { Color = Color.Black };
+            mygrid.Children.Add(BlackBox21, 11, 5);
+            Grid.SetColumnSpan(BlackBox21, 3);
+
+            BoxView BlackBox22 = new BoxView { Color = Color.Black };
+            mygrid.Children.Add(BlackBox22, 12, 4);
+            Grid.SetRowSpan(BlackBox22, 3);
+
+            BoxView BlackBoxr = new BoxView { Color = Color.Black };
+            mygrid.Children.Add(BlackBoxr, 6, 10);
+            Grid.SetColumnSpan(BlackBoxr, 5);
+            
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 5, 11);
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 4, 12);
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 11, 11);
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 12, 12);
+            
         }
 
         //private void mybut1_Click(object sender, EventArgs e)
