@@ -16,8 +16,10 @@ namespace pract1
 
         public MainPage()
         {
-            InitializeComponent();
-
+            InitializeComponent();  
+        }
+        public void smileBoxViev()
+        {
             //for (int i = 1; i < 17; i++)
             //{
             //    Label label = new Label
@@ -34,21 +36,21 @@ namespace pract1
             int p = 0;
             for (int i = 0; i < 18; i++)
             {
-                if (i > 12) { p++; }   
+                if (i > 12) { p++; }
                 for (int j = 0; j < 18; j++)
                 {
-                    if ((i < 5)&&(i!=0))
+                    if ((i < 5) && (i != 0))
                     {
-                            if ((j > 4 - i) && (j < 13 + i))
-                            {
-                                mygrid.Children.Add(new BoxView { Color = Color.Yellow }, j, i);
-                            }
-                            else
-                            {
-                                mygrid.Children.Add(new BoxView { Color = Color.Green }, j, i);
-                            }
+                        if ((j > 4 - i) && (j < 13 + i))
+                        {
+                            mygrid.Children.Add(new BoxView { Color = Color.Yellow }, j, i);
+                        }
+                        else
+                        {
+                            mygrid.Children.Add(new BoxView { Color = Color.Green }, j, i);
+                        }
                     }
-                    else if ((i == 5)||(i==12))
+                    else if ((i == 5) || (i == 12))
                     {
                         if ((j > 0) && (j < 17))
                         {
@@ -71,19 +73,19 @@ namespace pract1
                         }
                     }
                     else if ((i > 12) && (i != 17))
-                    {                       
+                    {
                         if ((j > 0 + p - 1) && (j < 17 - (p - 1)))
                         {
-                           mygrid.Children.Add(new BoxView { Color = Color.Yellow }, j, i);
+                            mygrid.Children.Add(new BoxView { Color = Color.Yellow }, j, i);
                         }
                         else
                         {
-                           mygrid.Children.Add(new BoxView { Color = Color.Green }, j, i);
+                            mygrid.Children.Add(new BoxView { Color = Color.Green }, j, i);
                         }
-                     }
+                    }
                     else
                     {
-                        mygrid.Children.Add(new BoxView { Color = Color.Yellow}, j, i);
+                        mygrid.Children.Add(new BoxView { Color = Color.Yellow }, j, i);
                     }
                 }
             }
@@ -106,14 +108,22 @@ namespace pract1
             BoxView BlackBoxr = new BoxView { Color = Color.Black };
             mygrid.Children.Add(BlackBoxr, 6, 10);
             Grid.SetColumnSpan(BlackBoxr, 5);
-            
+
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 5, 11);
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 4, 12);
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 11, 11);
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 12, 12);
-            
-        }
 
+            BoxView BlackBoxpit = new BoxView { Color = Color.Pink};
+            mygrid.Children.Add(BlackBoxpit, 14, 0);
+            Grid.SetColumnSpan(BlackBoxpit, 2);
+            Grid.SetRowSpan(BlackBoxpit, 3);
+        }
+        private void OnButtonClicked(object sender, System.EventArgs e)
+        {
+            smileBoxViev();
+            butSmile.IsEnabled = false;
+        }
         //private void mybut1_Click(object sender, EventArgs e)
         //{
         //   // mybut1.Text = "Ура!!!";
