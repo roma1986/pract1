@@ -4,7 +4,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:pract1"
-    BackgroundColor="Wheat">
+    BackgroundColor="WhiteSmoke">
 
     <!--<StackLayout Padding="20">
         <BoxView Color="red" Margin="5" HeightRequest="100"/>
@@ -45,9 +45,9 @@
             BorderWidth="1"
             Clicked="OnButtonClicked"
             FontSize="Large"
-            TextColor="Red"
             HorizontalOptions="Fill"
             Text="Click mi"
+            TextColor="Red"
             VerticalOptions="Center" />
 
         <Grid

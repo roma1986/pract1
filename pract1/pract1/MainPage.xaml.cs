@@ -12,27 +12,12 @@ namespace pract1
     {
         public static double staticVar = 10;
 
-        public const string header = "XAMARIN";
-
         public MainPage()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
         public void smileBoxViev()
         {
-            //for (int i = 1; i < 17; i++)
-            //{
-            //    Label label = new Label
-            //    {
-            //        Text = "Метка " + i,
-            //        FontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label))
-            //    };
-            //    stackLayout.Children.Add(label);
-            //}
-            //ScrollView scrollView = new ScrollView();
-            //scrollView.Content = stackLayout;
-            ////Content = scrollView;
-            ///
             int p = 0;
             for (int i = 0; i < 18; i++)
             {
@@ -107,12 +92,12 @@ namespace pract1
 
             BoxView BlackBoxr = new BoxView { Color = Color.Black };
             mygrid.Children.Add(BlackBoxr, 6, 10);
-            Grid.SetColumnSpan(BlackBoxr, 5);
+            Grid.SetColumnSpan(BlackBoxr, 6);
 
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 5, 11);
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 4, 12);
-            mygrid.Children.Add(new BoxView { Color = Color.Black }, 11, 11);
-            mygrid.Children.Add(new BoxView { Color = Color.Black }, 12, 12);
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 12, 11);
+            mygrid.Children.Add(new BoxView { Color = Color.Black }, 13, 12);
 
             BoxView BlackBoxpit = new BoxView { Color = Color.Pink};
             mygrid.Children.Add(BlackBoxpit, 14, 0);
