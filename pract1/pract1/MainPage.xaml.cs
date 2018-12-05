@@ -11,11 +11,28 @@ namespace pract1
     public partial class MainPage : ContentPage
     {
         public static double staticVar = 10;
+        BoxView BlackBoxpit;
+        BoxView BlackBox12 = new BoxView { Color = Color.Black };
+        BoxView BlackBox11 = new BoxView { Color = Color.Black };
+
 
         public MainPage()
         {
             InitializeComponent();
+            var boxTapHandler = new TapGestureRecognizer();
+            boxTapHandler.Tapped += ChangeColor;
+            mygrid.GestureRecognizers.Add(boxTapHandler);
+
         }
+
+        public void ChangeColor(object sender, EventArgs args)
+        {
+            BlackBoxpit.Color = Color.Red;
+            BlackBox11.Color = Color.Red;
+            BlackBox12.Color = Color.Red;
+            laboma.Text = "Oooo my eye :(";
+        }
+
         public void smileBoxViev()
         {
             int p = 0;
@@ -74,11 +91,11 @@ namespace pract1
                     }
                 }
             }
-            BoxView BlackBox11 = new BoxView { Color = Color.Black };
+            
             mygrid.Children.Add(BlackBox11, 4, 5);
             Grid.SetColumnSpan(BlackBox11, 3);
 
-            BoxView BlackBox12 = new BoxView { Color = Color.Black };
+            
             mygrid.Children.Add(BlackBox12, 5, 4);
             Grid.SetRowSpan(BlackBox12, 3);
 
@@ -99,10 +116,11 @@ namespace pract1
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 12, 11);
             mygrid.Children.Add(new BoxView { Color = Color.Black }, 13, 12);
 
-            BoxView BlackBoxpit = new BoxView { Color = Color.Pink};
+            BlackBoxpit = new BoxView { Color = Color.Pink};
             mygrid.Children.Add(BlackBoxpit, 14, 0);
             Grid.SetColumnSpan(BlackBoxpit, 2);
             Grid.SetRowSpan(BlackBoxpit, 3);
+
         }
         private void OnButtonClicked(object sender, System.EventArgs e)
         {

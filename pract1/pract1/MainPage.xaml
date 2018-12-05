@@ -132,6 +132,16 @@
                     Height="{x:Static local:MainPage.staticVar}" />
             </Grid.RowDefinitions>
         </Grid>
+
+        <Label x:Name="laboma"
+            BackgroundColor="Red"
+            HorizontalOptions="Center"
+            Text=""
+            TextColor="Black"
+               FontSize="Large"
+            VerticalOptions="Fill" />
+     
+        
     </StackLayout>
 
 
