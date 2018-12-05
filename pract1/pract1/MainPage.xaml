@@ -79,11 +79,8 @@
             <RowDefinition Height="{x:Static local:MainPage.staticVar}"/>
         </Grid.RowDefinitions>
 
-
-
         </Grid>
-        
-        
+            
         <BoxView Color="CornflowerBlue"
              CornerRadius="200"
              WidthRequest="160"
